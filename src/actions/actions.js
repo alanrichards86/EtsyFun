@@ -1,6 +1,6 @@
-export const FILTER_PRODUCTS = 'FILTER_PRODUCTS';
+import {FILTER_PRODUCTS} from '../actionTypes/actionTypes';
 
-// export const filterProducts = function (filterType) {
+// const filterProducts = function (filterType) {
 //   return {
 //     type: FILTER_PRODUCTS,
 //     payload: filterType

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
+import FilterProducts from './FilterProducts';
 
 import Product from "../components/Product";
 
@@ -10,28 +11,37 @@ class ProductList extends Component {
         // Create a dynamically populated list of `<Product />` components
         // Each `<Product />` component should have a single object from the `products` state property (array)
         // applied to the component as a `product` property
+
+
+
         return (
             <ul className="ProductList">
-
+            {
+              products.map(item => <Product product={item} /> )
+            }
             </ul>
         );
     }
 }
 
-// Using the `mapStateToProps` function, filter the array stored in the 
+// Using the `mapStateToProps` function, filter the array stored in the
 // state `products` property based on 3 criterea:
 // - `underTwenty`
 // - `overTwenty`
 // - `all` or the default
 const mapStateToProps = function(state) {
-    let products;
+  console.log('mystate', state);
+    let products = [];
+
+
     // complete the `if else` statement including conditions and `products` value
-    if () {
-
-    } else if () {
-
+    if (products.filter === 'overTwenty') {
+      products = state.products.filter(item => parseInt(item.price) > 20 );
+    }
+    else if (products.filter === 'underTwenty') {
+      products = state.products.filter(item => parseInt(item.price) < 20 );
     } else {
-
+      products = state.products.filter(item => parseInt(item.price) > 0 );
     }
 
     return {products: products}
