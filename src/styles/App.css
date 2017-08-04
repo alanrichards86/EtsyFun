@@ -1,6 +1,10 @@
-
+#root {
+  background-image: url('../styles/imgs/purple-abstract-blur-bokeh.jpeg');
+  text-align: center;
+}
 h2 {
   margin-bottom: 1.2rem;
+  color: #eceff1;
 }
 
 h3 {

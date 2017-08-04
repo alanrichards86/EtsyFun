@@ -1,0 +1,11 @@
+.ProductList {
+  display: flex;
+  justify-content: center;
+  background-color: #fff59d;
+  border-radius: 4px;
+}
+.ProductList li {
+  width: 20%;
+  border-radius: 3px
+
+}

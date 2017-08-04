@@ -1,0 +1,10 @@
+.filterProducts {
+  display: flex;
+  justify-content: space-around;
+
+}
+
+button {
+  border-radius: 3px;
+  background-color: #a4a4a4;
+}

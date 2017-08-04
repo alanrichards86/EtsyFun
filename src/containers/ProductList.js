@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux'
 import FilterProducts from './FilterProducts';
+import '../styles/ProductsList.css'
 
 import Product from "../components/Product";
 
